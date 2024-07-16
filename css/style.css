@@ -1,0 +1,250 @@
+/* FORMATEO */
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden; /* barra desplazamiento */
+    }
+
+/* ESTILO DEL HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #75c475;
+    color: white;
+    padding: 2rem;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header .titulo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .titulo h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .subtitulo {
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+
+header .subtitulo h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    font-style: italic;
+}
+
+nav {
+    width: 100vw;
+    background-color: #004d40;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: contents;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #75c475; 
+    color: #004d40; 
+    text-decoration: none;
+}
+
+/* ESTILO DEL FOOTER */
+footer {
+    background-color: #75c475;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer h2 {
+    padding-top: 1.5rem;
+    color: #004d40;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.footer .menu ul, .footer .seguinos ul {
+    list-style: none;
+}
+
+.footer .seguinos ul li {
+    margin-bottom: 1rem;
+}
+
+.footer .seguinos a {
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .contactanos p {
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.footer .contactanos a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ESTILO DEL MAIN (inicio) */
+main .leg-fs-sem {
+    text-align: center;
+    width: 100%;
+}
+
+/* ESTILO DEL MAIN (nosotros) */
+.fondo1 {
+    background-image: url(../img/fondo1.jpeg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    color: #004d40;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem;
+    padding-top: 3rem;
+    color: #004d40;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+}
+
+.vegan {
+    text-align: right;
+}
+
+/* ESTILO MAIN (productos) */
+.fondo2 {
+    background-image: url(../img/fondo2.jpg);
+}
+.introprod{
+    padding: 2rem;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.burguer {
+    width: 30rem;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.burguer:hover {
+    transform: scale(1.1);
+}
+
+.ingredientes {
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.listaprod {
+    text-align: center;
+}
+
+
+/* ESTILO DEL MAIN (tienda) */
+.precio {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+   
+}
+
+/* ESTILO DEL MAIN (contacto) */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #75c475;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #75c475;
+}
+
+.contacto {
+    padding: 2rem;
+}
