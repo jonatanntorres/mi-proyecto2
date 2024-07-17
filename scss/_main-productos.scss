@@ -1,0 +1,51 @@
+// Estilo del main (productos)
+.fondo2 {
+    background-image: url(../img/fondo2.jpg);
+  }
+  
+  .introduccion {
+    padding: 2rem;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    background-color: $color-light;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  
+    .burguer {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover;
+      height: 200px;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    .ingredientes {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .listaprod {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+  

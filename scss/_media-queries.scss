@@ -1,0 +1,11 @@
+// Media queries
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+}

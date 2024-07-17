@@ -1,0 +1,43 @@
+// Estilo del main (inicio)
+section.intro {
+  text-align: center;
+  padding: 20px;
+  background-color: $color-white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: $color-light;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
