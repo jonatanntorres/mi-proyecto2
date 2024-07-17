@@ -14,74 +14,110 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  </head>
+<!-- BOOTSTRAP -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="logo">
-      <img src="/img/logo1.png" alt="Logo">
-      </div>
-  <div class="titulo">
-      <h1>Tienda Online de Comida Vegana</h1>
-      </div>
-  <div class="subtitulo">
-      <h2><em>Nutritiva y a Base de plantas</em></h2>
-      </div>
-  <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./tienda.html">Tienda</a></li>
-        <li><a href="./contacto.html">Contactos</a></li>
-        </ul>
-      </nav>
-  </header>   
+
+<div class="logo">
+    <img src="/img/logo1.png" alt="Logo">
+</div>
+
+<div class="titulo">
+    <h1>Tienda Online de Comida Vegana</h1>
+</div>
+
+<div class="subtitulo">
+    <h2><em>Nutritiva y a Base de plantas</em></h2>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Sano y Vegano</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tienda.html">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contactos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</header>   
 
 <!-- MAIN -->    
 <main class="main">
-  <section class="fondo1">
-  <section>
-    <h2>Misión</h2>
-    <p>En Sano y vegano, creemos que una alimentación saludable y deliciosa puede ir de la mano. Nuestra misión es ofrecerte opciones veganas y nutritivas que no solo satisfagan tu paladar, sino que también nutran tu cuerpo y alma.</p>
-    </section>
-  <section >
-    <h3>Definición de veganismo</h3>
-    <p>"El veganismo es una forma de vida que busca excluir, en la medida de lo posible y practicable, todas las formas de explotación y crueldad hacia los animales, ya sea para la alimentación, la vestimenta o cualquier otro propósito. En la práctica del veganismo, se evitan todos los productos de origen animal, así como el uso de productos derivados de ellos."</p>
-    <p class="vegan"><em>The Vegan Society</em></p>
-    </section>
+<section class="fondo2">
+<section>
+  <h2>Misión</h2>
+  <p class="introduccion">En Sano y Vegano, sabemos que una alimentación nutritiva y deliciosa es posible. Nuestra misión es ofrecerte opciones veganas y sanas que no solo satisfagan tu paladar, sino que también nutran tu cuerpo y alma. Nos comprometemos a promover un estilo de vida basado en ingredientes naturales y sostenibles, respetando el bienestar animal y el medio ambiente. A través de nuestras deliciosas burguers veganas y una amplia gama de productos, queremos inspirarte a descubrir el placer de comer de manera consciente, apreciando en cada bocado el impacto positivo en tu salud y en el planeta.</p>
   </section>
-  </main>
-  
+<section >
+  <h3>Definición de veganismo</h3>
+  <p>"El veganismo es una forma de vida que busca excluir, en la medida de lo posible y practicable, todas las formas de explotación y crueldad hacia los animales, ya sea para la alimentación, la vestimenta o cualquier otro propósito. En la práctica del veganismo, se evitan todos los productos de origen animal, así como el uso de productos derivados de ellos."</p>
+  <p class="vegan"><em>The Vegan Society</em></p>
+  </section>
+</section>
+</main>
+
 <!-- FOOTER -->    
-<footer>
-  <div class="footer">
-      <nav class="menu">
-          <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="./productos.html">Productos</a></li>
-              <li><a href="./tienda.html">Tienda</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
+<footer class="footer pt-4">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Menú</h2>
+      <nav>
+        <ul class="list-unstyled">
+          <li><a href="/index.html" class="text-white">Inicio</a></li>
+          <li><a href="#" class="text-white">Nosotros</a></li>
+          <li><a href="./productos.html" class="text-white">Productos</a></li>
+          <li><a href="./tienda.html" class="text-white">Tienda</a></li>
+          <li><a href="./contacto.html" class="text-white">Contacto</a></li>
+        </ul>
       </nav>
-      <div class="seguinos">
-          <h2>Seguinos</h2>
-          <ul>
-              <li><a href="http://facebook.com">Facebook</a></li>
-              <li><a href="http://twitter.com">Twitter</a></li>
-              <li><a href="http://instagram.com">Instagram</a></li>
-          </ul>
-      </div>
-      <div class="contactanos">
-          <h2>Contactanos</h2>
-          <p>Tel: <a href="tel:+123456789">+123 456 789</a></p>
-          <p>Email: <a href="mailto:gmail.com">sanoyvegano@gmail.com</a></p>
-      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Seguinos</h2>
+      <ul class="list-unstyled">
+        <li><a href="http://facebook.com" class="text-white">Facebook</a></li>
+        <li><a href="http://twitter.com" class="text-white">Twitter</a></li>
+        <li><a href="http://instagram.com" class="text-white">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Contactanos</h2>
+      <ul class="list-unstyled">
+        <li><a href="tel:+123456789" class="text-white">+123 456 789</a></li>
+        <li><a href="mailto:sanoyvegano@gmail.com" class="text-white">sanoyvegano@gmail.com</a></li>
+      </ul>
+    </div>
   </div>
-  </footer>
-  
+</div>
+</footer>
+
 </body>
 </html>

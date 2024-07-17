@@ -14,65 +14,143 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!-- BOOTSTRAP -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 <!-- HEADER -->
 <header>
+
     <div class="logo">
         <img src="./img/logo1.png" alt="Logo">
-        </div>
+    </div>
+
     <div class="titulo">
         <h1>Tienda Online de Comida Vegana</h1>
-        </div>
+    </div>
+
     <div class="subtitulo">
         <h2><em>Nutritiva y a Base de plantas</em></h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Sano y Vegano</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+            </li>
+          </ul>
         </div>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/tienda.html">Tienda</a></li>
-            <li><a href="./pages/contacto.html">Contactos</a></li>
-        </ul>
-        </nav>
-    </header>    
+      </nav>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</header>    
 
 <!-- MAIN -->
 <main>
-    <div>
-        <img class="leg-fs-sem" src="./img/leg-fs-sem.jpg" alt="">
-        </div>    
-    </main>
+    <section class="fondo2">
+    <section class="intro">
+        <h2>Bienvenidos a nuestra página de Comida Vegana</h2>
+        <p class="introduccion">La alimentación vegana no solo es una opción ética y respetuosa con los animales, sino que también puede ser muy saludable. En esta página, exploraremos los beneficios nutricionales de diversos ingredientes que forman parte de una dieta vegana equilibrada. Desde las proteínas ricas de las legumbres hasta las grasas saludables de los frutos secos, aprenderás cómo estos alimentos contribuyen a tu bienestar.</p>
+    </section>
+
+    <section class="grid-container">
+        <div class="grid-item">
+            <h2>Legumbres</h2>
+            <img src="/img/legumbres.jpg" alt="Legumbres">
+            <p>Las legumbres son una fuente excelente de proteínas, fibra, vitaminas y minerales. Incluyen porotos, lentejas, garbanzos y más. Son esenciales para una dieta vegana equilibrada, ya que proporcionan aminoácidos esenciales y ayudan a mantener la salud digestiva.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Cereales</h2>
+            <img src="/img/cereales.jpg" alt="Cereales">
+            <p>Los cereales integrales como la avena, el arroz y la quinoa son ricos en fibra y proporcionan energía duradera. También contienen importantes vitaminas del grupo B, que son esenciales para el metabolismo y la producción de energía.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Semillas</h2>
+            <img src="/img/semillas.jpg" alt="Semillas">
+            <p>Las semillas, como las de chía, lino y sésamo, son pequeñas pero potentes, llenas de grasas saludables, proteínas y fibra. También son una excelente fuente de minerales como el magnesio y el zinc, que son vitales para numerosas funciones corporales.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Frutos Secos</h2>
+            <img src="/img/frutossecos.jpg" alt="Frutos Secos">
+            <p>Los frutos secos, como las almendras, nueces y avellanas, son ricos en grasas saludables, proteínas, vitaminas y minerales. Son una gran fuente de energía y ayudan a mantener la salud del corazón gracias a su contenido de ácidos grasos omega-3 y antioxidantes.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Frutas</h2>
+            <img src="/img/frutas.avif" alt="Frutas">
+            <p>Las frutas son una parte esencial de una dieta vegana equilibrada. Son ricas en vitaminas, minerales y antioxidantes, y proporcionan una amplia gama de beneficios para la salud. Consumir una variedad de frutas puede ayudar a fortalecer el sistema inmunológico, mejorar la digestión y reducir el riesgo de enfermedades crónicas.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Verduras</h2>
+            <img src="/img/verduras.jpg" alt="Verduras">
+            <p>Las verduras son fundamentales en cualquier dieta saludable. Aportan una gran cantidad de vitaminas, minerales y fibra, y son bajas en calorías. Las verduras ayudan a mantener un peso saludable, mejorar la digestión y reducir el riesgo de enfermedades cardíacas y otros problemas de salud.</p>
+        </div>
+    </section>
+
+</main>
 
 <!-- FOOTER -->    
-<footer>
-        <div class="footer">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/tienda.html">Tienda</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="seguinos">
-                <h2>Seguinos</h2>
-                <ul>
-                    <li><a href="http://facebook.com">Facebook</a></li>
-                    <li><a href="http://twitter.com">Twitter</a></li>
-                    <li><a href="http://instagram.com">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="contactanos">
-                <h2>Contactanos</h2>
-                <p>Tel: <a href="tel:+123456789">+123 456 789</a></p>
-                <p>Email: <a href="mailto:gmail.com">sanoyvegano@gmail.com</a></p>
-            </div>
+<footer class="footer pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Menú</h2>
+          <nav>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Inicio</a></li>
+              <li><a href="./pages/nosotros.html" class="text-white">Nosotros</a></li>
+              <li><a href="./pages/productos.html" class="text-white">Productos</a></li>
+              <li><a href="./pages/tienda.html" class="text-white">Tienda</a></li>
+              <li><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
-    </footer>
-    
+
+        <div class="col-md-4">
+          <h2>Seguinos</h2>
+          <ul class="list-unstyled">
+            <li><a href="http://facebook.com" class="text-white">Facebook</a></li>
+            <li><a href="http://twitter.com" class="text-white">Twitter</a></li>
+            <li><a href="http://instagram.com" class="text-white">Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h2>Contactanos</h2>
+          <ul class="list-unstyled">
+            <li><a href="tel:+123456789" class="text-white">+123 456 789</a></li>
+            <li><a href="mailto:sanoyvegano@gmail.com" class="text-white">sanoyvegano@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
 </body>
 </html>
+</head>

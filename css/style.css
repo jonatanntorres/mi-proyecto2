@@ -2,9 +2,14 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
     overflow-x: hidden; /* barra desplazamiento */
     }
 
+body {
+    padding-top: 56px; 
+    }
+    
 /* ESTILO DEL HEADER */
 header {
     display: flex;
@@ -43,90 +48,109 @@ header .subtitulo h2 {
     font-style: italic;
 }
 
-nav {
-    width: 100vw;
-    background-color: #004d40;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: contents;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #75c475; 
-    color: #004d40; 
-    text-decoration: none;
-}
+/* ESTILO DEL MENÚ (Header) */
+.navbar {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
 
 /* ESTILO DEL FOOTER */
 footer {
-    background-color: #75c475;
+    background-color: #75c475 !important; 
     color: #fff;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer h2 {
     padding-top: 1.5rem;
+}
+
+footer h2 {
     color: #004d40;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
-.footer .menu ul, .footer .seguinos ul {
+footer ul {
     list-style: none;
+    padding-left: 0;
 }
 
-.footer .seguinos ul li {
-    margin-bottom: 1rem;
-}
-
-.footer .seguinos a {
-    font-family: "Open Sans", sans-serif;
-    color: #000000;
+footer a {
+    color: #fff;
     text-decoration: none;
 }
 
-.footer .contactanos p {
-    font-family: "Open Sans", sans-serif;
-    color: #000000;
-    text-decoration: none;
-    padding: 0.5rem;
-}
-
-.footer .contactanos a {
-    color: #000000;
-    text-decoration: none;
+footer a:hover {
+    color: #007bff;
 }
 
 /* ESTILO DEL MAIN (inicio) */
-main .leg-fs-sem {
+section.intro {
     text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-item h2 {
+    margin-top: 0;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.grid-item img {
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; 
+    height: 200px; 
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
 }
 
 /* ESTILO DEL MAIN (nosotros) */
@@ -142,9 +166,12 @@ main .leg-fs-sem {
 h2 {
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
     margin-top: 2.5rem;
     color: #004d40;
+    overflow: hidden; 
 }
 
 h3 {
@@ -169,22 +196,37 @@ p {
 .fondo2 {
     background-image: url(../img/fondo2.jpg);
 }
-.introprod{
+
+.introduccion {
     padding: 2rem;
     text-align: center;
     font-size: 23px;
     font-style: italic;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
 .burguer {
-    width: 30rem;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; 
+    height: 200px; 
 }
 
 .burguer:hover {
@@ -193,21 +235,51 @@ p {
 
 .ingredientes {
     margin-top: 1.5rem;
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .listaprod {
     text-align: center;
+    margin-top: 0;
 }
-
 
 /* ESTILO DEL MAIN (tienda) */
 .precio {
     text-align: center;
     font-weight: bold;
     margin-bottom: 2rem;
-   
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.flex-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.btn-comprar {
+    display: block;
+    margin: 10px auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #45a049;
 }
 
 /* ESTILO DEL MAIN (contacto) */

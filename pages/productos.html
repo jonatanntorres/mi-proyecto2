@@ -14,108 +14,146 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  </head>
+<!-- BOOTSTRAP -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="logo">
-      <img src="/img/logo1.png" alt="Logo">
-      </div>
-  <div class="titulo">
-      <h1>Tienda Online de Comida Vegana</h1>
-      </div>
-  <div class="subtitulo">
-      <h2><em>Nutritiva y a Base de plantas</em></h2>
-      </div>
-  <nav>
-      <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="./tienda.html">Tienda</a></li>
-          <li><a href="./contacto.html">Contactos</a></li>
+
+<div class="logo">
+    <img src="/img/logo1.png" alt="Logo">
+</div>
+
+<div class="titulo">
+    <h1>Tienda Online de Comida Vegana</h1>
+</div>
+
+<div class="subtitulo">
+    <h2><em>Nutritiva y a Base de plantas</em></h2>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Sano y Vegano</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./tienda.html">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contactos</a>
+        </li>
       </ul>
-      </nav>
-  </header>   
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</header>   
 
 <!-- MAIN -->
 <main class="main">
-  <section class="fondo2">
-    <section>
-    <p class="introprod">Descubre opciones elaboradas con ingredientes frescos y naturales, que demuestran que comer bien es un placer accesible para todos. Únete a nosotros en este viaje hacia una vida más saludable y compasiva, donde cada bocado cuenta.</p>
+<section class="fondo2">
+  <section>
+    <p class="introduccion">Descubre opciones elaboradas con ingredientes frescos y naturales, que demuestran que comer bien es un placer accesible para todos. Únete a nosotros en este viaje hacia una vida más saludable y compasiva, donde cada bocado cuenta.</p>
     <h2>Productos</h2>
-    </section>
+  </section>
 
-  <div class="texto">
-    <h3 class="listaprod">Arroz yananí</h3>
-    <img class="burguer" src="../img/Imagen1_yamani.jpg" alt="Burguers de arroz yananí">
-    <p class="ingredientes">Vegetales de estación, aceite de oliva, orégano, cúrcuma, pimentón, sal marina</p>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3 class="listaprod">Arroz yamaní</h3>
+      <br>
+      <img class="burguer" src="../img/Imagen1_yamani.jpg" alt="Burguers de arroz yananí">
+      <p class="ingredientes">Vegetales de estación, aceite de oliva, orégano, cúrcuma, pimentón, sal marina</p>
     </div>  
-    
-  <div class="texto">
-    <h3 class="listaprod">Quinoa</h3>
-    <img class="burguer" src="../img/Imagen3_quinoa.jpg" alt="Burguers de quinoa">
-    <p class="ingredientes">Vegetales de estación, curry en polvo, sal marina</p>
+
+    <div class="grid-item">
+      <h3 class="listaprod">Quinoa</h3>
+      <br>
+      <img class="burguer" src="../img/Imagen3_quinoa.jpg" alt="Burguers de quinoa">
+      <p class="ingredientes">Vegetales de estación, curry en polvo, sal marina</p>
     </div>
 
-  <div class="texto">
-    <h3 class="listaprod">Porotos blancos y calabaza</h3>
-    <img class="burguer" src="../img/Imagen5_porotosblancosycalabaza.jpg" alt="Burguers de porotos blancos y calabaza">
-    <p class="ingredientes">Vegetales de estación, pimentón, sal marina</p>
+    <div class="grid-item">
+      <h3 class="listaprod">Porotos blancos y calabaza</h3>
+      <img class="burguer" src="../img/Imagen5_porotosblancosycalabaza.jpg" alt="Burguers de porotos blancos y calabaza">
+      <p class="ingredientes">Vegetales de estación, pimentón, sal marina</p>
     </div>    
 
-  <div class="texto">
-    <h3 class="listaprod">Porotos negros y champiñones</h3>
-    <img class="burguer" src="../img/Imagen6_porotosnegrosychampinones.jpg" alt="Burguers de porotos negros y champiñones">
-    <p class="ingredientes">Aceite de oliva, pimentón, sal marina</p>
+    <div class="grid-item">
+      <h3 class="listaprod">Porotos negros y champiñones</h3>
+      <img class="burguer" src="../img/Imagen6_porotosnegrosychampinones.jpg" alt="Burguers de porotos negros y champiñones">
+      <p class="ingredientes">Aceite de oliva, pimentón, sal marina</p>
     </div> 
 
-    <div class="texto">
+    <div class="grid-item">
       <h3 class="listaprod">Trigo burgol y porotos mung</h3>
       <img class="burguer" src="../img/Imagen4_burgolymung.jpg" alt="Burguers de trigo burgol y porotos mung">
       <p class="ingredientes">Lino, cúrcuma, orégano, sal marina</p>
-      </div>
+    </div>
 
-    <div class="texto">
+    <div class="grid-item">
       <h3 class="listaprod">Lentejas</h3>
+      <br>
       <img class="burguer" src="../img/Imagen2_lentejas.jpg" alt="Burguers de lentejas">
       <p class="ingredientes">Vegetales de estación, curry en polvo, sal marina</p>
-      </div>  
-    <br>
-    <br>
-    <br> 
-  </section> 
-  </main>
-   
-<!-- FOOTER -->    
-<footer>
-  <div class="footer">
-      <nav class="menu">
-          <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="./tienda.html">Tienda</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-      </nav>
-      <div class="seguinos">
-          <h2>Seguinos</h2>
-          <ul>
-              <li><a href="http://facebook.com">Facebook</a></li>
-              <li><a href="http://twitter.com">Twitter</a></li>
-              <li><a href="http://instagram.com">Instagram</a></li>
-          </ul>
-      </div>
-      <div class="contactanos">
-          <h2>Contactanos</h2>
-          <p>Tel: <a href="tel:+123456789">+123 456 789</a></p>
-          <p>Email: <a href="mailto:gmail.com">sanoyvegano@gmail.com</a></p>
-      </div>
+    </div>  
   </div>
-  </footer>
+</section>
+</main>
+ 
+<!-- FOOTER -->    
+<footer class="footer pt-4">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Menú</h2>
+      <nav>
+        <ul class="list-unstyled">
+          <li><a href="/index.html" class="text-white">Inicio</a></li>
+          <li><a href="./nosotros.html" class="text-white">Nosotros</a></li>
+          <li><a href="#" class="text-white">Productos</a></li>
+          <li><a href="./tienda.html" class="text-white">Tienda</a></li>
+          <li><a href="./contacto.html" class="text-white">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Seguinos</h2>
+      <ul class="list-unstyled">
+        <li><a href="http://facebook.com" class="text-white">Facebook</a></li>
+        <li><a href="http://twitter.com" class="text-white">Twitter</a></li>
+        <li><a href="http://instagram.com" class="text-white">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Contactanos</h2>
+      <ul class="list-unstyled">
+        <li><a href="tel:+123456789" class="text-white">+123 456 789</a></li>
+        <li><a href="mailto:sanoyvegano@gmail.com" class="text-white">sanoyvegano@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
 
 </body>
 </html>
